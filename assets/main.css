@@ -56,6 +56,68 @@ body{
     }
 }
 
+/* End Header */
+
+
+
+/* Start Newsletter */
+
+.newsletter{
+    background-image: url(./img/public/Rectangle\ 102.png);
+    padding: 175px 0;
+    text-align: center;
+}
+
+.newsletter h2{
+    margin-bottom: 50px;
+    color: #151875;
+    font-size: 35px;
+}
+
+.Shop-btn:hover{
+    background-color: #151875;
+    transition: 1s;
+}
+/* End Newsletter */
+
+
+
+
+/* Start Clients */
+
+.clients{
+    padding: 50px 0;
+}
+
+.clients .row{
+    flex-wrap: nowrap;
+    gap: 15px;
+    overflow-x: auto;
+}
+
+.clients .logo{
+    width: calc( ( 100% - 60px ) / 5);
+}
+
+.clients img{
+    width: 250px;
+    height: 250px;
+
+}
+
+@media screen and (max-width:900px) {
+
+    .clients .logo{
+        width: calc( 100% - 30px ) / 3;
+    }
+    
+}
+/* End Clients */
+
+
+
+
+/* Start Footer */
 
 .footer{
     background-color: #EEEFFB;
@@ -107,3 +169,5 @@ body{
     }
     
 }
+
+/* End Footer */
