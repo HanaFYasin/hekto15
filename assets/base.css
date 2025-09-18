@@ -46,6 +46,24 @@ ul{
     margin: auto;
 }
 
+@media screen and (max-width:1400px){
+    .container{
+        width: calc(100% - 200px);
+    }
+}
+
+@media screen and (max-width:990px){
+    .container{
+        width: calc(100% - 100px);
+    }
+}
+
+@media screen and (max-width:570px){
+    .container{
+        width: calc(100% - 40px);
+    }
+}
+
 .text-white{
     color: #fff;
 }
