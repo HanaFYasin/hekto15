@@ -95,3 +95,19 @@ ul{
 .gap-5{
     gap: 25px;
 }
+
+.text-center{
+    text-align: center;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.text-secondary{
+    color: #151875;
+}
