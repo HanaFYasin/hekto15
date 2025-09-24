@@ -382,7 +382,70 @@ body{
 
 
 
+/* Start Shopex Offer */
+
+.shopex-offer{
+    color: #1A0B5B;
+    padding: 50px 0;
+}
+
+.shopex-offer h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.shopex-offer .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+.shopex-offer .offer{
+    flex: 1 0 50px;
+    box-shadow: 0px 0px 1px #00000040 ;
+    border-radius: 2px;
+    padding: 20px;
+}
+
+.offer img{
+    background-color: #fff;
+    padding: 20px;    
+    height: 100px;
+}
+
+.offer p{
+    color: #8A8FB9;
+    padding-top: 20px;
+}
+
+@media screen and (max-width: 1200px){
+    .shopex-offer .row{
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .shopex-offer .offer {
+    flex: 1 0 45%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+    .shopex-offer .offer {
+        flex: 1 0 100%;
+        width: 100%;
+    }
+}
+/* End Shopex Offer */
+
+
+
 /* Start Newsletter */
+
+
+
+
 
 .newsletter{
     background-image: url(./img/public/Rectangle\ 102.png);
@@ -401,6 +464,11 @@ body{
     transition: 1s;
 }
 /* End Newsletter */
+
+
+
+
+
 
 
 /* Start Clients */
