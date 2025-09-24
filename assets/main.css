@@ -48,7 +48,7 @@ body{
 
 @media screen and (max-width:1200px) {
     .list,
-    .header.search{
+    .search{
         display: none;
     }
     .bar{
@@ -60,25 +60,56 @@ body{
 
 
 
-/* Start Newsletter */
 
-.newsletter{
-    background-image: url(./img/public/Rectangle\ 102.png);
-    padding: 175px 0;
-    text-align: center;
+
+
+
+
+/* Start Hero */
+
+.hero{
+    background-color: #F2F0FF;
+    padding: 50px 0;
 }
 
-.newsletter h2{
-    margin-bottom: 50px;
-    color: #151875;
-    font-size: 35px;
+.hero-contant{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex: 1 0 60%;
 }
 
-.Shop-btn:hover{
-    background-color: #151875;
-    transition: 1s;
+.hero-contant .hero-lamp{
+    position: relative;
+    bottom: 50px;
+    width: 20%;
 }
-/* End Newsletter */
+
+.text-contant{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.text-contant .p-one{
+    color: var(--primary);
+}
+
+.text-contant .p-two{
+    color: #8A8FB9;
+}
+
+.hero-img {
+    flex: 1 0 30%;
+}
+
+.hero-img img{
+    width: 100%;
+}
+
+/* End Hero */
 
 
 /* Start Featured Product */
@@ -92,6 +123,7 @@ body{
     margin-bottom: 30px;
 }
 
+
 .featured-product .row{
     justify-content: flex-start;
     gap: 15px;
@@ -100,6 +132,28 @@ body{
 .product{
     position: relative;
 }
+
+.product .icons {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  gap: 10px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.product .icons a img {
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  transition: transform 0.3s;
+}
+
+.product:hover .icons {
+  opacity: 1;
+}
+
 
 .badge-sale{
     position: absolute;
@@ -180,8 +234,173 @@ body{
     color: #fff;
 }
 
+@media screen and (max-width: 1200px) {
+  .featured-product .row {
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .featured-product .product {
+    flex: 1 0 40%;
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+    .featured-product .product {
+        flex: 1 0 100%;
+        width: 100%;
+    }
+}
+
 /* End Featured Product */
 
+
+
+
+/* Start Leatest Products */
+
+.leatest-Products{
+    color: #1A0B5B;
+    padding: 50px 0;
+}
+
+.leatest-Products h2{
+    margin-bottom: 30px;
+}
+
+
+.links{
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 40px;
+}
+
+.links .link.active,
+.links .link:hover {
+  color: var(--primary);
+  transition: 0.3s;
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 2px;
+}
+
+.leatest-Products .row{
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.l-product{
+    position: relative;
+}
+
+.l-product .icons {
+  position: absolute;
+  top: 190px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.l-product .icons img {
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  transition: transform 0.3s;
+}
+
+.l-product:hover .icons {
+  opacity: 1;
+}
+
+.leatest-Products .l-product{
+    flex: 1 0 400px;
+    box-shadow: 0px 4px 4px #00000040;
+    border-radius: 4px;
+}
+
+.l-product .img{
+    background-color: #F6F7FB;
+    padding: 20px;
+}
+
+.l-product .img img{
+    height: 250px;
+    object-fit: contain;
+}
+
+.leatest-product-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    transition: all 0.6s;
+}
+
+.l-product:hover .leatest-product-details{
+    background-color: #2c11fc;
+    border-radius: 2px;
+}
+
+.l-product:hover .leatest-product-details h3{
+    color: #fff;
+    transition: 0.9s;
+}
+
+.leatest-product-info span{
+    transition: all .9s;
+}
+
+.l-product:hover .leatest-product-info span{
+    color: #fff;
+}
+
+@media screen and (max-width: 1200px) {
+  .leatest-Products .row {
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .leatest-Products .l-product {
+    flex: 1 0 45%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+    .leatest-Products .l-product {
+        flex: 1 0 100%;
+        width: 100%;
+    }
+}
+
+
+/* End Leatest Products */
+
+
+
+/* Start Newsletter */
+
+.newsletter{
+    background-image: url(./img/public/Rectangle\ 102.png);
+    padding: 175px 0;
+    text-align: center;
+}
+
+.newsletter h2{
+    margin-bottom: 50px;
+    color: #151875;
+    font-size: 35px;
+}
+
+.Shop-btn:hover{
+    background-color: #151875;
+    transition: 1s;
+}
+/* End Newsletter */
 
 
 /* Start Clients */
@@ -237,6 +456,26 @@ body{
     gap: 35px;
     align-items: flex-start;
     width:calc((100% - 30px)/2);
+}
+
+.email form{
+    border: 2px solid #E7E6EF;
+    border-radius: 5px;
+    display: flex;
+}
+
+.email input{
+    border: none;
+    outline: border;
+    width: 200px;
+    padding-left: 9px;
+}
+
+.email button{
+    border: none;
+    outline: border; 
+    background-color: var(--primary);
+    padding: 8px 13px;
 }
 
 .footer .right-side{

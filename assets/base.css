@@ -111,3 +111,7 @@ ul{
 .text-secondary{
     color: #151875;
 }
+
+.text-primary{
+    color: var(--primary);
+}
